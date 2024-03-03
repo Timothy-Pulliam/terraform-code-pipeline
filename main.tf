@@ -74,7 +74,7 @@ resource "aws_iam_role" "codebuild_role" {
 
 resource "aws_cloudwatch_log_group" "this" {
   name              = "/aws/codebuild/${var.app_name}"
-  retention_in_days = 120
+  retention_in_days = 365
 
   # If true, skip deleting log group when running terraform
   # destroy, and instead remove from the terraform state
