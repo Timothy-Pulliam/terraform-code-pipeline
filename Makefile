@@ -20,7 +20,6 @@ lint:
 
 cost: json
 	infracost breakdown --path tfplan.json --usage-file infracost-usage.yml  --sync-usage-file --show-skipped
-	infracost breakdown --path tfplan.json 
 
 scan: json
 	checkov -f tfplan.json
